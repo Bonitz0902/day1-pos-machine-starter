@@ -5,7 +5,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
-
+//TODO: Has only single commit
 public class PosMachine {
     public String printReceipt(List<String> barcodes) {
 
@@ -23,6 +23,7 @@ public class PosMachine {
         for(int i = 0; i<receiptItemList.size(); i++){
              itemReceipt.append(generateItemsReceipt(receiptItemList.get(i), calculatedReceiptItem.get(i))).append("\n");
         }
+        //TODO: Can use Enhance for loop - for(ReceiptItem receiptItem : receiptItemList)
         itemReceipt.append( String.format("----------------------\n" +
                 "Total: %d (yuan)\n" +
                 "**********************", totalCostOfItems));
@@ -90,3 +91,5 @@ public class PosMachine {
     }
 
 }
+
+

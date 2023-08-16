@@ -23,7 +23,7 @@ public class PosMachineTest {
 
         assertEquals(expected, posMachine.printReceipt(loadBarcodes()));
     }
-
+//TODO: Test failed, Items not in order
 
     private static List<String> loadBarcodes() {
         return Arrays.asList("ITEM000000", "ITEM000000", "ITEM000000", "ITEM000000", "ITEM000001", "ITEM000001", "ITEM000004", "ITEM000004", "ITEM000004");
